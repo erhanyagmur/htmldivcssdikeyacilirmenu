@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dikey Açılır Menü</title>
+<style type="text/css">
+*{
+	margin: 0;
+    padding: 0;
+}
+#d-menu{
+	background-color:#333;
+	 width: 250px;
+	 margin-left: 50px;
+	 margin-top: 100px;
+}
+#d-menu li{
+	list-style-type:none;
+	
+}
+#d-menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	border-bottom:1px solid #282828;
+}
+#d-menu li ul {
+	display:none;
+}
+#d-menu ul li:hover ul {
+	display:block;
+	position:absolute;
+	margin-left:251px;
+	margin-top:-38px;
+}
+#d-menu li ul li a {
+	padding:10px;
+	font-size:15px;
+	background-color: #282828;
+	border-bottom:1px solid #222;
+	transition:all .3s ease-in-out;
+	width:170px;
+}
+#d-menu li a:hover{
+	background-color: #407ce0;
+	transition:all .3s ease-in-out;
+}
+iframe{
+	height:300px;
+	width:500px;
+}
+</style>
+</head>
+
+<body>
+<div id="d-menu">
+  <ul>
+    <li><a href="#">ANASAYFA</a></li>
+    <li><a href="#">WEB TASARIM</a>
+<ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JAVASCRIPT</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">ASP.NET</a></li>
+      </ul>
+    </li>
+    <li><a href="#">PROGRAMLAMA</a>
+<ul>
+        <li><a href="csharp.html" target="menu">C#</a></li>
+        <li><a href="cplus.html" target="menu">C++</a></li>
+        <li><a href="vb.html" target="menu">VB.NET</a></li>
+        <li><a href="android.html" target="menu">ANDROID</a></li>
+        <li><a href="arduino.html" target="menu">ARDUINO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">GRAFİK</a>
+<ul>
+        <li><a href="#">PAINT</a></li>
+        <li><a href="#">FIREWORKS</a></li>
+        <li><a href="#">PHOTOSHOP</a></li>
+        <li><a href="#">ILLUSTRATOR</a></li>
+      </ul>
+    </li>
+    <li><a href="#">HAKKIMDA</a></li>
+    <li><a href="#">İLETİŞİM</a></li>
+  </ul>
+</div>
+<br><br><br>
+<iframe name="menu"></iframe>
+</body>
+</html>
